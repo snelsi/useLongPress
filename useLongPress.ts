@@ -15,7 +15,7 @@ export const useLongPress = <T>(
   holdTime = 300,
   holdDistance = 3 ** 2
 ) => {
-  const [timer, setTimer] = React.useState(null);
+  const [timer, setTimer] = React.useState<number | null>(null);
   const [startPoint, setStartPoint] = React.useState({
     x: 0,
     y: 0
